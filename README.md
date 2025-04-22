@@ -14,4 +14,4 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 4. Run!
-python paramhound.py -u https://example.com --crawl all
+python main.py -u https://example.com --crawl all
