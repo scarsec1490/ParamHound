@@ -1,4 +1,4 @@
-ParamHound is SCARSEC’s open‑source utility for red‑teamers who want speed without the bloat. Point it at a URL (or let it recurse the whole domain) and it will:
+ParamHound is SCARSEC’s open‑source utility for bug hunters who want speed without the bloat. Point it at a URL (or let it recurse the whole domain) and it will:
 
 Crawl up to 10 levels deep using plain requests—no headless browsers.
 
