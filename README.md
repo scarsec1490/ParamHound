@@ -1,21 +1,16 @@
-ParamHound is SCARSEC’s open‑source utility for bug hunters who want speed without the bloat. Point it at a URL (or let it recurse the whole domain) and it will:
+## 🚀 Installation
+> Quick setup for Linux, macOS, or Windows 10/11 (Python 3.8 +).
 
-Crawl up to 10 levels deep using plain requests—no headless browsers.
+# 1. Clone
+git clone https://github.com/scarsec1490/ParamHound.git
+cd ParamHound
 
-Detect both GET parameters and HTML forms, printing them in color.
+# 2. Optional: create a virtual environment
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
 
-Highlight parameters that matter (id, q, search, …) while ignoring noise like CSRF tokens and timestamps.
+# 3. Install dependencies
+pip install -r requirements.txt
 
-Rotate User‑Agents or accept a custom header to blend into traffic.
-
-Save results to disk so you can feed them straight into your favourite fuzzer or proxy.
-
-Why use ParamHound?
-
-Lightweight – ships as a single Python script, installs three tiny libs.
-
-Noise‑free output – surfaces high‑value inputs, trims false positives.
-
-Portable – works on Linux, macOS, Windows, even a barebones Docker alpine.
-
-SCARSEC built ParamHound to scratch our own itch during web assessments; now it’s yours to fork, extend, and improve. Happy hunting!
+# 4. Run!
+python paramhound.py -u https://example.com --crawl all
